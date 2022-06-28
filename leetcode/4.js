@@ -1,16 +1,16 @@
-let nums1 = [1, 3]
-let nums2 = [2, 4]
+let input1 = [1, 3]
+let input2 = [2, 4]
 
-function findMedianSortedArrays(nums1, nums2) {
-    let nums3 = nums1.concat(nums2)
-    nums3.sort((a, b) => a - b);
-    if (nums3.length % 2 != 0) {
-        let center = Math.floor(nums3.length / 2);
-        return nums3[center]
-    } else if (nums3.length % 2 == 0) {
-        let center = nums3.length / 2;
-        return (nums3[center] + nums3[center - 1]) / 2
+function findMedianSortedArrays(array1, array2) {
+    let combinedArray = array1.concat(array2)
+    combinedArray.sort((a, b) => a - b);
+    if (combinedArray.length % 2 != 0) {
+        let mid = Math.floor(combinedArray.length / 2);
+        return combinedArray[mid]
+    } else if (combinedArray.length % 2 == 0) {
+        let mid = combinedArray.length / 2;
+        return (combinedArray[mid] + combinedArray[mid - 1]) / 2
     }
 }
 
-findMedianSortedArrays(nums1, nums2);
+findMedianSortedArrays(input1, input2);
