@@ -7,7 +7,7 @@ function classPhotos(redShirtHeights, blueShirtHeights) {
         if (blueShirtHeights[i] > redShirtHeights[i]) continue;
         else result = false
     }
-    if (result == true) return result;
+    if (result) return result;
     result = true;
     for (let i = 0; i < size; i++) {
         if (redShirtHeights[i] > blueShirtHeights[i]) continue;
