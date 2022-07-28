@@ -1,18 +1,19 @@
-let input = [141, 1, 17, -7, -17, -27, 18, 541, 8, 7, 7];
-
 function findThreeLargestNumbers(array) {
-    const topThree = Array(3);
-
+    let first = undefined;
+    let second = undefined;
+    let third = undefined;
     for (const element of array) {
-        if (!topThree[2] || element > topThree[2]) {
-            topThree[0] = topThree[1]
-            topThree[1] = topThree[2]
-            topThree[2] = element
+        if (!first || element > first) {
+            third = second;
+            second = first;
+            first = element;
         }
-
+        else if (!second || element > second) {
+            third = second;
+            second = element;
+        }
+        else if (!third || element > third) third = element;
     }
-    console.log(topThree)
+    console.log([third, second, first])
+    return [third, second, first]
 }
-
-findThreeLargestNumbers(input)
-// Answer: [18, 141, 541]
