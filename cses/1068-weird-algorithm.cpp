@@ -3,20 +3,17 @@ using namespace std;
 
 int main()
 {
-	int n;
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	
+	long long n;
 	cin >> n;
-	while (n != 1)
+	while (true)
 	{
-		if (n % 2 == 0)
-		{
-			n /= 2;
-			cout << "N is now " << n << endl;
-		}
-		else
-		{
-			n = (n*3) + 1;
-			cout << "N is now " << n << endl;
-		}
+		cout << n << ' ';
+		if (n == 1) break;
+		if (n % 2 == 0) n /= 2;
+		else n = (n*3) + 1;
 	}
-	return n;
+	return 0;
 }
