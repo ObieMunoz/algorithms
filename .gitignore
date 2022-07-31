@@ -38,5 +38,10 @@
 !*.*
 !*/
 
+*/.DS_Store
+
 .template
 .vscode
+
+*/*/input.txt
+*/*/output.txt
