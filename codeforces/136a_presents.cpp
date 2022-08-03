@@ -10,7 +10,7 @@ int main()
 	
 	int n;
 	cin >> n;
-	vector<int> people(n, -1);
+	vector<int> people(n, -1); 
 	for(int i = 0; i < n; i++)
 	{
 		int p;
@@ -20,6 +20,6 @@ int main()
 	
 	for(int g: people)
 		cout << g << " ";
-		
+
 	return 0;
 }
