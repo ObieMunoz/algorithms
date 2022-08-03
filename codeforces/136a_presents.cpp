@@ -10,24 +10,16 @@ int main()
 	
 	int n;
 	cin >> n;
-	vector<int> people;
-	vector<pair<int,int>> pp;
+	vector<int> people(n, -1);
 	for(int i = 0; i < n; i++)
 	{
 		int p;
 		cin >> p;
-		people.push_back(p);
-		pp.push_back(make_pair(i+1,p));
-		cout << pp[i].first << " " << pp[i].second << "\n";
+		people[p - 1] = i + 1;
 	}
 	
-	for(int i = 0; i < pp.size(); i++)
-	{
-		for (int j = 0; j < pp.size(); j++)
-		{
-			if (pp[j].second == i+1) cout << pp[j].first;
-		}
-		if (i != pp.size() - 1) cout << " ";
-	}
+	for(int g: people)
+		cout << g << " ";
+		
 	return 0;
 }
