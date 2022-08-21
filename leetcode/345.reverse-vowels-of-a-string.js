@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {string}
  */
-var reverseVowels = function (s) {
+const reverseVowels = function (s) {
     const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
     let foundVowels = [];
     let result = '';

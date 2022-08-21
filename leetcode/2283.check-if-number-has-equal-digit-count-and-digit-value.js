@@ -2,7 +2,7 @@
  * @param {string} num
  * @return {boolean}
  */
-var digitCount = function (num) {
+const digitCount = function (num) {
     let counts = {};
     for (const number of num) {
         if (counts[number]) counts[number]++;

@@ -6,7 +6,7 @@
  * @param {string} s
  * @return {boolean}
  */
-var isPalindrome = function (s) {
+const isPalindrome = function (s) {
     let t = s.replace(/[^a-zA-Z0-9]+/g, '').toLowerCase();
     let z = t.split('').reverse().join('').toLowerCase();
     return t == z

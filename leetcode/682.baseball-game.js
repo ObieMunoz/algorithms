@@ -2,8 +2,7 @@
  * @param {string[]} ops
  * @return {number}
  */
-var calPoints = function (ops) {
-    let result = 0;
+const calPoints = function (ops) {
     let scores = [];
     for (let i = 0; i < ops.length; i++) {
         switch (ops[i]) {
