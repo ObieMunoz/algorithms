@@ -1,6 +1,3 @@
-// loop through a file and add each number to an array of arrays.
-// an empty line should be a new array
-
 const fs = require('fs');
 const path = require('path');
 
